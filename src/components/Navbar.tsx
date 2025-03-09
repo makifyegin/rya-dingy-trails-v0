@@ -6,10 +6,10 @@ export function Navbar() {
         {/* Left Side */}
         <div className="flex gap-8 text-white">
           <ul className="font-poppins font-light text-base">Rya Dinghy Trails</ul>
-          <ul className="font-poppins font-light text-base">Solutions</ul>
-          <ul className="font-poppins font-light text-base">Pricing</ul>
+          <ul className="font-poppins font-light text-base">Trails</ul>
+          <ul className="font-poppins font-light text-base">Courses</ul>
           <ul className="font-poppins font-light text-base">Resources</ul>
-          <ul className="font-poppins font-light text-base">Enterprise</ul>
+          <ul className="font-poppins font-light text-base">News</ul>
           <ul className="font-poppins font-light text-base">What's new</ul>
         </div>
 
