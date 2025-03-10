@@ -1,15 +1,16 @@
 import React from 'react';
+import { Accordion } from '@/components/Accordion';
 
 export default function Home() {
   return (
     <>
       {/* Video Area */}
-      <div className="h-[90vh] bg-gray-900 flex items-center justify-center overflow-hidden relative z-0">
+      <div className="video-area">
         <video
           autoPlay
           muted
           loop
-          className="w-full h-full object-cover"
+          className="video-component"
         >
           <source src="/sailing.mp4" type="video/mp4" />
           Your browser does not support the video tag.
@@ -19,20 +20,21 @@ export default function Home() {
         <div className="absolute bottom-0 left-0 w-full h-32 bg-gradient-to-t from-black to-transparent z-10"></div>
       </div>
 
-      {/* Second Area (Seamless Section) */}
-      <div className="w-full bg-black py-16 px-8 rounded-t-3xl relative z-20 -mt-6">
-        <div className="max-w-3xl mx-auto text-center">
-          <h2 className="text-3xl font-bold text-white mb-6">
-            Your New Adventure Starts Here!
-          </h2>
-          <p className="text-white text-lg leading-relaxed">
-            Our trails are designed to show you how to get the most out of your dinghy and enjoy a day on the water exploring some of our glorious countryside. All of our trails have used <strong className="text-blue-400">local knowledge</strong> so that you can get the best out of your day on the water.
-          </p>
-          <p className="text-white text-lg leading-relaxed mt-4">
-            For the <strong className="text-blue-400">less experienced</strong>, along with some easier trails, we have a range of courses that will upskill your knowledge and help you gain confidence. The more experienced dinghy cruiser can challenge themselves with some of our <strong className="text-blue-400">longer trips</strong>.
-          </p>
-          <p className="text-white text-lg leading-relaxed mt-4">
-            We hope that you enjoy your days on the water - don't forget to let us know how you get on! If you have a trail that you would like to share some top tips, remember to fill in our form.
+      {/* Second Area (Smooth Ocean Background) */}
+      <div className="relative bg-black py-16 px-8 rounded-t-3xl z-20 -mt-6">
+        <div className="absolute inset-0 bg-gradient-to-r from-[#00BFFF] via-[#1E90FF] to-[#48C9B0] opacity-30"></div>
+        <div className="max-w-3xl mx-auto text-center relative z-10">
+          {/* Accordion Component */}
+          <Accordion />
+        </div>
+      </div>
+
+      {/* Optional: Add another section with a smooth ocean feel */}
+      <div className="w-full bg-gradient-to-r from-[#00BFFF] via-[#1E90FF] to-[#48C9B0] py-16 px-8 rounded-t-3xl">
+        <div className="max-w-3xl mx-auto text-center text-white">
+          <p className="mb-6">
+            Start exploring the seas with our interactive guide. Learn about
+            different topics related to sailing, boating, and more!
           </p>
         </div>
       </div>
